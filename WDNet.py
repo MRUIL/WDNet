@@ -259,7 +259,7 @@ class WDNet(object):
                 I_watermark_loss=self.l1loss(I_watermark*mask,y_*mask)*mask.size(0)*mask.size(1)*mask.size(2)*mask.size(3)/mask.sum()
                 I_watermark2_loss=self.l1loss(G_*mask,y_*mask)*mask.size(0)*mask.size(1)*mask.size(2)*mask.size(3)/mask.sum()
                 G_writer=G_loss.data
-                G_loss=G_loss+50.0*mask_loss+10.0*w_loss+10.0*alpha_loss+50.0*(0.7*I_watermark2_loss+0.3*I_watermark_loss)+1e-2*vgg_loss
+                G_loss=G_loss+10.0*mask_loss+10.0*w_loss+10.0*alpha_loss+50.0*(0.7*I_watermark2_loss+0.3*I_watermark_loss)+1e-2*vgg_loss
                 G_loss.backward()
                 self.G_optimizer.step()
                 if((iter+1)%100) ==0:
