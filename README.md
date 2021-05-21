@@ -16,3 +16,8 @@ year = {2021}
 ```
 ## Dataset CLWD
 [CLWD](https://drive.google.com/file/d/17y1gkUhIV6rZJg1gMG-gzVMnH27fm4Ij/view?usp=sharing)
+
+## Pretraied Model
+```
+Thanks for the help of @[ChaiHuanhuan](https://github.com/ChaiHuanhuan), who trained the WDNet and provided a pretrained [WDNet model](https://drive.google.com/drive/folders/1mZrWKJ_BAMGclW-1jqzxXZiOWvnkECRC?usp=sharing). This model is trained for 50 epoches.
+```
